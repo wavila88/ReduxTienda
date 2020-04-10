@@ -15,6 +15,7 @@ class ComprarPokemon extends Component {
                     this.props.return_pokemon_action(1);
                 }}>Regresar Pokemon</button>
             </div>
+            
         )
     }
 
