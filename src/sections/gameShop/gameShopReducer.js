@@ -1,4 +1,4 @@
-import {BUY_POKEMON, RETURN_POKEMON } from '../actions/gameShopAction';
+import {BUY_POKEMON, RETURN_POKEMON } from './gameShopAction';
   
   
   export const default_game_shop = {
@@ -16,7 +16,7 @@ import {BUY_POKEMON, RETURN_POKEMON } from '../actions/gameShopAction';
       case RETURN_POKEMON: {
         return{
           ...state,
-          pokemon: state.pokemon + action.payload
+          pokemon: state.pokemon - action.payload
         }
 
       }

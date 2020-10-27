@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import CantidadPokemon from './components/pokemon/cantidadPokemon';
 import ComprarPokemon from './components/pokemon/comprarPokemon'
-import store from './redux/reducers/store';
+import store from './sections/reducers/store';
 import { Provider } from 'react-redux';
 
 export default function App() {

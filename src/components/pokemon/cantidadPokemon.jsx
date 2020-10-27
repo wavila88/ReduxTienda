@@ -3,11 +3,13 @@ import {connect } from 'react-redux'
 
  class CantidadPokemon extends Component{
     
-    
     render(){
+        console.log("Usuario:", this.props.customer_info)
         return(
            <Fragment>
                Unidades: {this.props.game_shop.pokemon}
+             
+
            </Fragment>
         );
 
@@ -16,7 +18,8 @@ import {connect } from 'react-redux'
 
 const mapStateToProps = (state) => {
     return {
-        game_shop: state.game_shop
+        game_shop: state.game_shop,
+        customer_info: state.customer_info,
     }
 
 };
